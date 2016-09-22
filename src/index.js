@@ -3,5 +3,15 @@
  * @return {Type}
  */
 export default function () {
-  return true
+  let experience = {}
+  return {
+    load(dataset) {
+      let count = 0
+      dataset.forEach((data) => {
+        count++
+      })
+
+      return count
+    } 
+  }
 }
