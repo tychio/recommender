@@ -1,16 +1,20 @@
-import test from "tape"
-import ReviewBot from "../src"
+import test from 'tape'
+import ReviewBot from '../src'
 
-test("review bot", (t) => {
-  t.plan(1)
+test('review bot', (assert) => {
+  assert.plan(3)
   const reviewbot = new ReviewBot();
-  const candidates = [
-    {a: 1, b: 0, c: 1, value: 1},
-    {a: 1, b: 0, c: 1, value: 1},
-    {a: 1, b: 0, c: 0, value: 1},
-    {a: 0, b: 0, c: 1, value: 0},
-    {a: 0, b: 1, c: 1, value: 0},
-    {a: 1, b: 0, c: 0, value: 0},
+  const dataset = [
+    {good: 0, bad: 0, common: 0, value: 'bad'},
+    {good: 0, bad: 0, common: 1, value: 'good'},
+    {good: 0, bad: 1, common: 1, value: 'bad'},
+    {good: 1, bad: 0, common: 0, value: 'good'},
+    {good: 1, bad: 0, common: 1, value: 'good'},
+    {good: 1, bad: 1, common: 1, value: 'good'},
   ]
-  t.equal(6, reviewbot.load(candidates), "should return count of data which is loaded successfully")
+
+  assert.equal(reviewbot.learn(dataset), 6, 'should return count of data which is loaded successfully')
+
+  assert.equal(reviewbot.review({good:0, bad: 1, common: 0}), 'bad', 'should be bad item')
+  assert.equal(reviewbot.review({good:1, bad: 1, common: 0}), 'good', 'should be good item')
 })
