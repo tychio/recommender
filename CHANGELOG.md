@@ -8,4 +8,4 @@
 
 ### v1.0.0
 
- * reviewbot initial commit.
+ * recommender initial commit.

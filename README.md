@@ -1,4 +1,4 @@
-# reviewbot
+# recommender
 
 [![NPM version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
@@ -11,31 +11,31 @@
 ## Install
 
 ```sh
-npm i -D reviewbot
+npm i -D recommender
 ```
 
 ## Usage
 
 ```js
-import reviewbot from "reviewbot"
+import recommender from "recommender"
 
-reviewbot() // true
+recommender() // true
 ```
 
 ## License
 
 MIT © [Tychio](http://tych.io)
 
-[npm-url]: https://npmjs.org/package/reviewbot
-[npm-image]: https://img.shields.io/npm/v/reviewbot.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/recommender
+[npm-image]: https://img.shields.io/npm/v/recommender.svg?style=flat-square
 
-[travis-url]: https://travis-ci.org/tychio/reviewbot
-[travis-image]: https://img.shields.io/travis/tychio/reviewbot.svg?style=flat-square
+[travis-url]: https://travis-ci.org/tychio/recommender
+[travis-image]: https://img.shields.io/travis/tychio/recommender.svg?style=flat-square
 
-[coveralls-url]: https://coveralls.io/r/tychio/reviewbot
-[coveralls-image]: https://img.shields.io/coveralls/tychio/reviewbot.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/r/tychio/recommender
+[coveralls-image]: https://img.shields.io/coveralls/tychio/recommender.svg?style=flat-square
 
-[depstat-url]: https://david-dm.org/tychio/reviewbot
-[depstat-image]: https://david-dm.org/tychio/reviewbot.svg?style=flat-square
+[depstat-url]: https://david-dm.org/tychio/recommender
+[depstat-image]: https://david-dm.org/tychio/recommender.svg?style=flat-square
 
-[download-badge]: http://img.shields.io/npm/dm/reviewbot.svg?style=flat-square
+[download-badge]: http://img.shields.io/npm/dm/recommender.svg?style=flat-square

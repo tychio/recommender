@@ -1,5 +1,5 @@
 {
-  "name": "reviewbot",
+  "name": "recommender",
   "version": "1.0.0",
   "description": "a robot to check if object is good or bad by machine learning",
   "main": "dist/index.js",
@@ -29,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tychio/reviewbot.git"
+    "url": "git+https://github.com/tychio/recommender.git"
   },
   "keywords": [
     "machine learning"
@@ -37,9 +37,9 @@
   "author": "Tychio <code@tychio.net>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tychio/reviewbot/issues"
+    "url": "https://github.com/tychio/recommender/issues"
   },
-  "homepage": "https://github.com/tychio/reviewbot#readme",
+  "homepage": "https://github.com/tychio/recommender#readme",
   "devDependencies": {
     "babel-cli": "^6.14.0",
     "babel-core": "^6.14.0",
